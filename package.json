@@ -1,0 +1,10 @@
+{
+  "version": "1.2.0",
+  "devDependencies": {
+    "json-to-ast": "^2.1.0",
+    "recast": "0.20.5"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

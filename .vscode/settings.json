@@ -1,0 +1,61 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.format.enable": true,
+  "sonarlint.connectedMode.project": {
+    "projectKey": "webteam_web-wallet-admin_AX1KeTa4cQEcUGXSGL-q"
+  },
+  "ego.power-tools": {
+    "startup": [
+      {
+        "type": "script",
+        "script": "startup.js",
+        "options": {
+          "cnRoot": ["/src/i18n/langs/cn/"],
+          "enRoot": ["/src/i18n/langs/en/"]
+        }
+      }
+    ],
+    "buttons": [
+      {
+        "color": "#ffff00",
+        "text": "Go to locales-en file",
+        "action": {
+          "type": "script",
+          "script": "./intl2file.js",
+          "options": {
+            "root": "/src/i18n/langs/en/"
+          }
+        }
+      },
+      {
+        "color": "#ffff00",
+        "text": "查找 zh-CN 文件",
+        "action": {
+          "type": "script",
+          "script": "./intl2file.js",
+          "options": {
+            "root": "/src/i18n/langs/cn/"
+          }
+        }
+      },
+      {
+        "color": "#ffff00",
+        "text": "调试startup",
+        "action": {
+          "type": "script",
+          "script": "./startup.js",
+          "options": {
+            "root": "/src/i18n/langs/cn/"
+          }
+        }
+      }
+    ]
+  },
+  "i18n-ally.localesPaths": [
+    "src/i18n",
+    "src/i18n/langs",
+    "public/static/libs/tinymce4.7.5/langs"
+  ]
+}
